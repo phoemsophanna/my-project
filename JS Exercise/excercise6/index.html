@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.0.2-dist/css/bootstrap-grid.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      @font-face {
+        font-family: loymen;
+        src: url(../AAREAKILOMETER50.TTF);
+      }
+      .login-input {
+        text-align: center;
+        padding: 15px 0;
+      }
+      .login-input input {
+        display: block;
+        margin: 0px auto 20px;
+        padding: 10px;
+        width: 230px;
+        border-radius: 10px;
+        font-size: 18px;
+        border: none;
+        box-shadow: 1px 2px 10px rgb(153, 153, 153);
+      }
+      .login-input input:focus {
+        outline: none;
+      }
+      .login-input button {
+        padding: 10px;
+        width: 230px;
+        font-size: 18px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 10px;
+        border: none;
+        background-color: rgb(0, 98, 235);
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+      }
+      .login-input button:hover {
+        background-color: rgb(1, 66, 156);
+      }
+      .login-form h1 {
+        width: 500;
+        font-family: loymen;
+        text-align: center;
+        font-size: 36px;
+        margin: 10px;
+        background: -webkit-linear-gradient(135deg, #fd6585 10%, #0d25b9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .login-form {
+        box-shadow: 1px 2px 10px rgb(161, 161, 161);
+        border-radius: 20px;
+      }
+      .container-product {
+        box-shadow: 1px 2px 10px rgb(161, 161, 161);
+        border-radius: 20px;
+      }
+      .container-product {
+        padding: 20px;
+      }
+      .search-box {
+        text-align: right;
+        position: relative;
+      }
+      .search-box input {
+        padding: 5px 10px;
+        width: 230px;
+        border-radius: 10px;
+        font-size: 14px;
+        border: none;
+        box-shadow: 1px 2px 10px rgb(153, 153, 153);
+      }
+      .search-box input:focus {
+        outline: none;
+      }
+      .search-box .icon1 {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: grey;
+      }
+      .blog .thumbnail {
+        height: 240px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 1px 2px 10px rgb(153, 153, 153);
+      }
+      .blog .thumbnail2 {
+        height: 240px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 1s;
+      }
+      .blog:hover .thumbnail2 {
+        transform: scale(1.1);
+      }
+      .blog {
+        box-shadow: 1px 2px 10px rgb(153, 153, 153);
+        padding: 5px;
+        border-radius: 20px;
+      }
+      .blog h3 {
+        margin: 10px 5px 5px;
+        font-size: 20px;
+        font-family: loymen;
+        font-weight: 300;
+      }
+      .blog h3 span {
+        display: block;
+        font-size: 12px;
+        margin: 15px 0 5px;
+        text-decoration: underline solid 1px black;
+        font-weight: 100;
+        font-family: "Ubuntu";
+        position: relative;
+      }
+      .blog h3 span p {
+        font-family: "Ubuntu";
+        display: inline;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .blog button {
+        font-family: "Ubuntu";
+        margin-left: 5px;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #096fff;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      .blog h2 {
+        font-family: "Ubuntu";
+        margin: 10px 5px 15px;
+        font-size: 18px;
+        color: red;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center login-container">
+        <div class="login-form col-lg-4 col-sm-12">
+          <h1>LOGIN PROFILE</h1>
+          <div class="login-input">
+            <input type="text" name="username" />
+            <input type="text" name="password" />
+            <button class="submit">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 container-product">
+      <div class="search-box">
+        <input type="text" id="search" />
+        <span class="icon1"><i class="ri-search-2-line"></i></span>
+      </div>
+      <div class="row mt-4 product-container"></div>
+    </div>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

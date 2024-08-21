@@ -1,0 +1,590 @@
+@font-face {
+    font-family: arial;
+    src:url(font/KonkhmerSleokchher-Regular.ttf);
+}
+@font-face {
+    font-family: phanna;
+    src: url(font/Ubuntu-Medium.ttf);
+}
+
+    /* Top logo */
+.logo{
+    width: 100px;
+    text-align: center;
+    font-size: 18pt;
+    font-family: Agency FB;
+    font-weight: bold;
+}
+.lg{
+    background-color: rgb(232, 232, 231);
+    width: 97%;
+    padding: 10px;
+    height: auto;
+}
+.sellc{
+    text-align: center;
+    font-size: 12pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+}
+/* Menu */
+.menu1{
+    text-decoration: none;
+    color: white;
+    font-family: Agency FB;
+    font-weight: bold;
+}
+.menu{
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    font-size: 15pt;
+}
+.menu2{
+    margin-top: 10px;
+    background-color: rgb(0, 119, 255);
+    border-radius: 30px;
+    width: 97%;
+}
+.menu:hover{
+    background-color: #f63030;
+    border-radius: 30px;
+}
+/* next to text */
+.prs{
+    background-color: rgb(172, 166, 166);
+    padding-top: 5px;
+    border-radius: 20px;
+    font-family: Khmer Savuth;
+    font-size: 13pt;
+    color: white;
+}
+.home{
+    background-color: #f63030;
+    width: 35px;
+    font-size: 14pt;
+    padding: 6px;
+    border-radius: 30px;
+    color: white;
+    font-family: Agency FB;
+    text-align: center;
+    position: relative;
+    bottom: 2px;
+}
+.laptop1{
+    width: 1400px;
+    height: 100px;
+}
+/* body */
+
+/* Mouse */
+.accessories1{
+    font-size: 12.3pt;
+    margin: 0;
+}
+.mouse{
+    width: 150px;
+    padding-top: 10px;
+    position: relative;
+    left: 37px;
+}
+.box-computer{
+    border: 2px solid rgba(161, 160, 160, 0.479);
+    width: 225px;
+    border-radius: 10px;
+    margin: 10px 8px;
+}
+.box-computer2{
+    border: 2px solid rgba(161, 160, 160, 0.479);
+    width: 225px;
+    border-radius: 10px;
+    margin: 10px 8px;
+}
+.mousetext{
+    text-align: center;
+    margin: 5px;
+    font-family: phanna;
+    font-size: 12pt;
+    color: #307ff6;
+    font-weight:700;
+    line-height: 24px;
+}
+.menum{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 60px;
+}
+.menu4{
+    color: #ffffff;
+    padding: 5px;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.341);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s;
+}
+.menu4:hover{
+    background-color: #5094f9;
+    color: white;
+    border: none;
+}
+/* Keyboard */
+.menum1{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+.menum2{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+.menum3{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+}
+
+/* search */
+.search1{
+    position: relative;
+    position: absolute;
+    bottom: 180px;
+}
+.search{
+    padding: 8px;
+    border-radius: 0 15px 15px 0px;
+    font-size: 12pt;
+    font-family: sans-serif;
+    background-color: #5094f9;
+    font-weight: 600;
+    border-color: #5094f9;
+    color: white;
+    border: none;
+    transition: all 1s;
+}
+.search:hover{
+    background-color: white;
+    color: #5094f9;
+    border: 1px solid black;
+    border-left: none;
+    padding: 7px;
+}
+.headset{
+    width: 260px;
+    height: 800px;
+    position: relative;
+    bottom: 50px;
+    margin: 0 0px 15px 60px;
+}
+/* laptop new */
+.box-computer1{
+    border: 2px solid rgba(161, 160, 160, 0.479);
+    width: 225px;
+    border-radius: 10px;
+    margin: 15px 8px;
+}
+.laptop2{
+    width: 140px;
+    height: 140px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.Laptoptext{
+    text-align: center;
+    font-size: 16pt;
+    margin: 0;
+    text-decoration: underline red solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 11, 11);
+}
+.promo{
+    width: 260px;
+    height: 650px;
+    position: relative;
+    left: 60px;
+    top: 20px;
+}
+.promo1{
+    position: relative;
+    left: 60px;
+    bottom: 110px;
+}
+/* Desktop */
+.code{
+    padding: 6.8px;
+    border-radius: 0 5px 5px 0px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8e8f8f;
+    font-weight: 600;
+    color: white;
+    border: none;
+    transition: all 1s;
+}
+.code:hover{
+    background-color: white;
+    border: 1px solid #8e8f8f7e;
+    color: black;
+    padding: 6px;
+    border-left: none;
+}
+.menudesktop{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    bottom: 440px;
+}
+.menu3{
+    color: #5094f9;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.341);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s;
+}
+.menu3:hover{
+    background-color: #5094f9;
+    color: white;
+    border: none;
+}
+.facebook-container{
+    border: 1px solid black;
+    height: 150px;
+    width: 300px;
+    position: relative;
+    left: 40px;
+    background-color: #5e88fa;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    left: 30px;
+    bottom: 420px;
+    border-radius: 10px;
+}
+.button-facebook{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    border-radius: 10px;
+}
+.button-facebook:hover{
+    background-color: #5094f9;
+    color: white;
+}
+.share{
+    position: relative;
+    left: 85px;
+    top: 14px;
+    border-radius: 10px;
+    padding: 2px;
+    width: 60px;
+}
+.share:hover{
+    background-color: #858585;
+    color: white;
+}
+/* footer */
+.top-footer{
+    color: white;
+    background-color: rgba(48, 114, 246, 0.732);
+    padding: 5px;
+    font-size: 16pt;
+    font-family: arial;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.icon-footer{
+    width: 16px;
+    padding: 0px 5px;
+}
+.footer{
+    background-color: rgb(232, 232, 231);
+    width: 1390px;
+    margin-top: 15px;
+}
+.footer1{
+    width: 50%;
+    padding: 5px 15px;
+    font-size: 11pt;
+    font-family: sans-serif;
+}
+.footer2{
+    text-align: center;
+    font-size: 11pt;
+    padding: 5px;
+    font-family: sans-serif;
+    color: rgb(133, 133, 133);
+    font-weight: 700;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 530px) {
+    /* header */
+    .lg{
+        width: 390px;
+    }
+    .menu2{
+        width: 400px;
+        position: relative;
+        right: 2px;
+        padding: 0px;
+        line-height: 12px;
+    }
+    .menu1{
+        font-size: 14px;
+    }
+    .menu{
+        padding: 4px 10px;
+    }
+    .prs{
+        width: 400px;
+        font-size: 14px;
+    }
+    .laptop1{
+        width: 400px;
+        height: 70px;
+    }
+    /* Accessories */
+    .accessories{
+        position: relative;
+        right: 33px;
+        border-radius: 0 10px 10px 0;
+    }
+    .menum{
+        display: none;
+    }
+    .menum1{
+        display: none;
+    }
+    .menum2{
+        display: none;
+    }
+    .menum3{
+        display: none;
+    }
+    
+    .accessories1{
+        font-size: 16px;
+        width: 100px;
+    }
+    .mouse{
+        width: 100px;
+    }
+    .mousetext{
+        font-size: 13px;
+    }
+    .price1{
+        font-size: 20px;
+    }
+    .box-computer{
+        width: 180px;
+    }
+    .box-computer1{
+        display: none;
+    }
+    .box-computer2{
+        display: none;
+    }
+    .headset{
+        display: none;
+    }
+    .search1{
+        display: none;
+    }
+    .search{
+        position: relative;
+        left: 155px;
+        bottom: 34px;
+    }
+    /* newlaptop */
+    .laptop2{
+        width: 130px;
+        position: relative;
+        right: 25px;
+    }
+    .promo2{
+        display: none;
+    }
+    .code1{
+        display: none;
+    }
+    .menudesktop{
+        display: none;
+    }
+    .facebook-container{
+        display: none;
+    }
+    .top-footer{
+        width: 380px;
+        position: relative;
+        left: 13px;
+    }
+    .footer{
+        width: 390px;
+    }
+    .footer1{
+        padding: 2px;
+        font-size: 13px;
+        width: 200px;
+        line-height: 18px;
+    }
+}
+@media only screen and (max-width: 830px) and (min-width: 750px){
+    .lg{
+        width: 780px;
+    }
+    .menu2{
+        width: 780px;
+    }
+    .prs{
+        width: 780px;
+    }
+    .laptop1{
+        width: 780px;
+    }
+    .accessories{
+        position: relative;
+        right: 37px;
+    }
+    .box-computer1{
+        display: none;
+    }
+    .box-computer2{
+        display: none;
+    }
+    .search{
+        position: relative;
+        bottom: 35px;
+        left: 150px;
+    }
+    .headset{
+        width: 200px;
+        position: relative;
+        right: 10px;
+        bottom: 20px;
+    }
+    .search1{
+        position: relative;
+        bottom: 40px;
+        right: 20px;
+    }
+    .table1{
+        position: relative;
+        right: 15px;
+    }
+    /* New Laptop */
+    .promo{
+        width: 230px;
+        height: 600px;
+        
+    }
+    .box-computer{
+        width: 200px;
+    }
+    .mousetext{
+        font-size: 16px;
+    }
+    .Laptoptext{
+        font-size: 11px;
+    }
+    /* table */
+    .promo1{
+        position: relative;
+        left: 30px;
+    }
+    .table5{
+        position: relative;
+        right: 20px;
+        width: 410px;
+    }
+    .table2{
+        margin-right: 28px;
+        width: 510px;
+    }
+    .table3{
+        position: relative;
+        right: 10px;
+    }
+    .table4{
+        position: relative;
+        right: 45px;
+        width: 500px;
+    }
+    .menum2{
+        width: 250px;
+        position: relative;
+        left: 40px;
+    }
+    .menum3{
+        position: relative;
+        left: 60px;
+    }
+    .menu3{
+        font-size: 13px;
+    }
+    .headset{
+        position: relative;
+        right: 20px;
+        bottom: 60px;
+    }
+    .desktop1{
+        width: 200px;
+        position: relative;
+        right: 20px;
+    }
+    .menudesktop{
+        position: relative;
+        right: 5px;
+        bottom: 428px;
+    }
+
+    .Laptoptext{
+        font-size: 18px;
+    }
+    .code1{
+        display: none;
+    }
+    .table2{
+        position: relative;
+        right: 22px;
+    }
+    .facebook-container{
+        width: 245px;
+        position: relative;
+        left: 20px;
+    }
+    .facebook1{
+        font-size: 15px;
+    }
+    .button-facebook{
+        font-size: 13px;
+    }
+    .share{
+        font-size: 13px;
+        padding: 2px;
+        position: relative;
+        position: absolute;
+        top: 110px;
+        left: 180px;
+    }
+    /* Footer */
+    .top-footer{
+        width: 720px;
+    }
+    .footer{
+        width: 780px;
+    }
+}

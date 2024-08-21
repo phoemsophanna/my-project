@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      .container {
+        margin: 10px auto;
+        padding: 10px;
+        width: 330px;
+        font-family: "Montserrat", sans-serif;
+        border-radius: 20px;
+        box-shadow: 2px 5px 10px rgb(142, 142, 142);
+      }
+      .pick {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .pick img,
+      .result img {
+        width: 90px;
+        border-radius: 15px;
+        border: 1px solid rgb(71, 71, 71);
+        box-shadow: 2px 5px 10px rgb(142, 142, 142);
+        margin-right: 10px;
+      }
+      .result {
+        text-align: center;
+      }
+      .result span {
+        display: block;
+        margin-top: 0px;
+      }
+      .result h5 {
+        font-size: 18px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .result div {
+        display: inline-block;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      .result h3 {
+        font-family: "Bungee Spice", sans-serif;
+        font-size: 28px;
+        margin-right: 20px;
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .point {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .result2 {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>You Can Pick</h2>
+      <div class="pick">
+        <a class="rock"><img src="rock.jpg" alt="" /></a>
+        <a class="paper"><img src="paper.jpg" alt="" /></a>
+        <a class="sisscor"><img src="sisscor.jpg" alt="" /></a>
+      </div>
+      <h2>You Pick</h2>
+      <div class="result">
+        <div>
+          <h5>You</h5>
+          <span class="you"><img src="empty.jpg" alt="" /></span>
+        </div>
+
+        <div><h3>VS</h3></div>
+        <div>
+          <h5>Computer</h5>
+          <span class="computer"><img src="empty.jpg" alt="" /></span>
+        </div>
+        <div class="result2"></div>
+      </div>
+      <h2>Result</h2>
+      <div class="point">Win: 0, Lose: 0, Draw: 0</div>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

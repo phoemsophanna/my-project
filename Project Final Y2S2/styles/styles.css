@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Battambang", sans-serif;
+}
+
+/* Top logo */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(135deg, #1e3c72 10%, #2a5298 100%);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.justify {
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 10%;
+  max-width: 10%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.laptop1 {
+  width: 1350px;
+  height: 100px;
+}
+
+.menu {
+  flex: 60%;
+  max-width: 60%;
+}
+.menu ul {
+  margin-top: 40px;
+  text-align: right;
+}
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu li a {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menu li a:hover {
+  color: #ff5555;
+}
+
+.welcome marquee {
+  font-size: 22px;
+  padding: 5px 5px;
+  font-weight: 500;
+}
+
+.welcome img {
+  width: 100%;
+}
+.bar-title {
+  position: relative;
+  width: 100%;
+}
+
+.bar-title p {
+  background-color: red;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bar-title::after {
+  content: " ";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  bottom: 1px;
+  background-color: red;
+}
+
+.card-computer {
+  flex: 23%;
+  max-width: 23%;
+  box-shadow: 4px 4px 10px rgb(205, 205, 205);
+  border-radius: 20px;
+}
+
+.img-container {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-computer img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card-computer p {
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #444;
+}
+
+.card-computer .price1 {
+  color: red;
+  font-size: 22px;
+}
+
+.card-computer:hover img {
+  transform: scale(1.1);
+}
+
+.footer-box {
+  flex: 30%;
+  max-width: 30%;
+}
+
+footer {
+  background-color: #444;
+  padding: 20px 0 0;
+}
+
+footer h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-box ul li {
+  list-style: none;
+  line-height: 23px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.footer-box ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.footer-box ul li a:hover {
+  color: #ff5555;
+  margin-left: 5px;
+}
+
+.top-footer {
+  background-color: rgb(167, 167, 255);
+  font-size: 24px;
+  border-radius: 28px;
+  font-weight: 300;
+}
+
+.button-click {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 80%;
+  top: 1px;
+  z-index: 3;
+  left: 1px;
+  height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s;
+}
+
+.menu-mobile.active {
+  display: flex;
+}
+
+.menu-mobile ul li {
+  list-style: none;
+  padding-left: 5px;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.menu-mobile ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.close-button {
+  position: absolute;
+  right: 1px;
+}
+
+.filter-left {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.filter-left label {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.filter-left select {
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 700;
+  border: none;
+}
+
+.filter-left select:focus {
+  outline: none;
+}
+
+.filter-right {
+  flex: 50%;
+  max-width: 50%;
+  text-align: right;
+}
+
+.filter-right input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 4px 4px 10px #d6d6d6;
+  font-size: 16px;
+}
+
+.filter-right input:focus {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu li a {
+    font-size: 1rem;
+  }
+  .menu {
+    flex: 70%;
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .container {
+    width: 95%;
+  }
+  .bar-title::after {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .card-computer {
+    flex: 30%;
+    max-width: 30%;
+  }
+  .menu {
+    display: none;
+  }
+  .button-click {
+    display: block;
+    margin-top: 5px;
+  }
+  .logo {
+    flex: 20%;
+    max-width: 20%;
+  }
+  .footer-box {
+    flex: 70%;
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-computer {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* body */

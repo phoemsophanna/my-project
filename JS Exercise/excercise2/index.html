@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .container {
+        font-family: "Montserrat", sans-serif;
+        margin: 10px auto;
+        padding: 10px;
+        width: 220px;
+        border-radius: 20px;
+        box-shadow: 3px 4px 20px #939393;
+        background-image: linear-gradient(
+          135deg,
+          rgb(255, 255, 255) 10%,
+          rgb(225 225 225) 100%
+        );
+      }
+      .contain-img img {
+        width: 100%;
+      }
+      .title h3 {
+        font-size: 16px;
+        text-align: center;
+      }
+      .btn-yes {
+        padding: 5px 20px;
+        color: #fff;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(34, 168, 0);
+      }
+      .back {
+        padding: 5px 20px;
+        color: #fff;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(0, 70, 168);
+        display: none;
+      }
+      .btn-no {
+        padding: 5px 20px;
+        color: #fff;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+        position: relative;
+        border-radius: 5px;
+        background-color: rgb(199, 0, 0);
+        border: 1px solid #fff;
+      }
+      .contain-no {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contain-img">
+        <img src="giphy.gif" alt="" />
+      </div>
+      <div class="title">
+        <h3>Do you Love Me 💖💖?</h3>
+      </div>
+      <div class="container-btn" style="margin: auto; text-align: center">
+        <button class="btn-yes">Yes</button>
+        <button class="back">Back</button>
+        <div class="contain-no">
+          <button class="btn-no">No</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
