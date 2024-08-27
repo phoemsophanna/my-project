@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #444;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 5px;
+  background-color: #56596cc1;
+  border-radius: 10px;
+  margin: 5px 5px;
+}
+
+header img {
+  width: 50px;
+}
+
+.banner {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.summary-banner {
+  flex: 60%;
+  max-width: 60%;
+  margin: auto 0px;
+}
+.img-banner {
+  flex: 25%;
+  max-width: 25%;
+  position: relative;
+}
+.img-banner img {
+  width: 100%;
+}
+.summary-banner h2 {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  margin: 5px 0px;
+}
+
+.summary-banner p {
+  color: #fff;
+  margin: 5px 0px;
+  line-height: 1.6;
+}
+
+.summary-banner button {
+  width: 120px;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  background-color: #007948;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px 2px rgb(107, 107, 107);
+  transition: all 0.5s ease-in-out;
+}
+
+.summary-banner button:hover {
+  box-shadow: none;
+  background-color: #00b86e;
+}
+
+.img-banner .icon img {
+  width: 40px;
+  position: absolute;
+  animation: iconAnimated 2s infinite;
+}
+
+.img-banner .icon img:first-child {
+  left: -15px;
+  top: 10px;
+}
+
+.img-banner .icon img:nth-child(2) {
+  right: -35px;
+  top: 50%;
+}
+
+.img-banner .icon img:last-child {
+  left: 1px;
+  top: 98%;
+}
+
+.container-model {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 1px;
+  background-color: rgba(3, 3, 3, 0.697);
+  z-index: 1000;
+}
+
+.container-model .video-container {
+  padding: 5px;
+  background-color: #fff;
+  width: 400px;
+  border-radius: 10px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.container-model .video-container button {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.container-model.active {
+  display: block;
+}
+
+.banner .spec {
+  flex: 20%;
+  max-width: 20%;
+  font-size: 18px;
+  background-image: linear-gradient(135deg, #e9defa 10%, #fbfcdb 100%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+.card {
+  flex: 30%;
+  max-width: 30%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgb(161, 161, 161);
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card img {
+  width: 100%;
+  transition: all 1s;
+}
+
+.card span {
+  font-size: 24px;
+  font-family: "New Amsterdam", sans-serif;
+  color: #444;
+  text-decoration: 2px underline solid #444;
+}
+
+.card h1 {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #444;
+}
+.card p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #444;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+.card .summary {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.image-container {
+  flex: 35%;
+  max-width: 35%;
+  position: relative;
+  height: 560px;
+}
+
+.detail-box {
+  flex: 60%;
+  max-width: 60%;
+}
+
+.detail-box h1 {
+  margin: 5px 0;
+  color: #444;
+}
+
+.detail-box span {
+  margin: 5px 0;
+  color: #444;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 20px;
+  text-decoration: 2px underline solid #444;
+}
+
+.detail-box p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.detail-box div button {
+  height: 25px;
+  width: 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.detail-box div button.active {
+  border: 3px solid #ce0000;
+}
+
+.detail-box div button:first-child {
+  background-color: pink;
+}
+
+.detail-box div button:nth-child(2) {
+  background-color: gold;
+}
+
+.detail-box div button:nth-child(3) {
+  background-color: greenyellow;
+}
+
+.detail-box div button:nth-child(4) {
+  background-color: rgb(127, 187, 255);
+}
+
+.detail-box div button:nth-child(5) {
+  background-color: #444;
+}
+
+.image-container img {
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  display: none;
+}
+.image-container img.active {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #fff;
+  background-color: black;
+  padding: 5px 0;
+}
+footer h3 {
+  margin: 0;
+}
+
+@keyframes iconAnimated {
+  0% {
+    margin-top: 3px;
+    margin-left: 0px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-left: 3px;
+  }
+
+  100% {
+    margin-top: 3px;
+    margin-left: 0px;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .banner {
+    width: 90%;
+  }
+  .card {
+    flex: 40%;
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .img-banner {
+    flex: 85%;
+    max-width: 85%;
+  }
+  .summary-banner {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .banner .spec {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .banner .spec {
+    flex: 37%;
+    max-width: 37%;
+  }
+  .card {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .image-container {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .detail-box {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
