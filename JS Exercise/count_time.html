@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .timenow {
+        padding: 5px;
+        font-size: 18px;
+        background-color: #444;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: cursive;
+      }
+      .container {
+        width: 325px;
+        padding: 10px;
+        box-shadow: 3px 3px 10px #e2e2e2;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      #count {
+        font-size: 40px;
+        font-family: monospace;
+        text-align: center;
+        margin: 5px 0;
+      }
+      #count_click {
+        display: block;
+        font-size: 24px;
+        height: 150px;
+        width: 150px;
+        border: 2px solid gray;
+        border-radius: 150px;
+        margin: 15px auto;
+        background-color: rgb(0, 141, 49);
+        color: #fff;
+      }
+      #reset_count {
+        display: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: #fff;
+      }
+    </style>
+    <div class="container">
+      <div class="timenow"></div>
+      <h1 id="count">0</h1>
+      <button id="count_click">Click Count</button>
+      <button id="reset_count">Reset Count</button>
+    </div>
+    <script>
+      var count = 0;
+      var real_date_time = "";
+      setInterval(function () {
+        var current_times = new Date();
+        real_date_time = `${current_times.getDate()}/${current_times.getMonth()}/${current_times.getFullYear()} - ${current_times.getHours()}:${
+          parseFloat(current_times.getMinutes()) > 9
+            ? current_times.getMinutes()
+            : "0" + current_times.getMinutes()
+        }:${current_times.getSeconds()}`;
+        _(".timenow").innerHTML = real_date_time;
+      }, 1000);
+      function _(element) {
+        return document.querySelector(element);
+      }
+
+      _("#count_click").addEventListener("click", () => {
+        if (!localStorage.getItem("time")) {
+          localStorage.setItem("time", real_date_time);
+        }
+        _("#count").innerHTML = count++;
+      });
+    </script>
+  </body>
+</html>
